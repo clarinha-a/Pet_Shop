@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dennyazevedofh/PetShop.git"
+    "url": "git+https://github.com/clarinha-a/Pet_Shop.git"
   },
   "keywords": [],
-  "author": "Denny Paulista Azevedo Filho",
+  "author": "Ana Clara Campanella Belchior",
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/dennyazevedofh/PetShop/issues"
+    "url": "https://github.com/clarinha-a/Pet_Shop/issues"
   },
-  "homepage": "https://github.com/dennyazevedofh/PetShop#readme",
+  "homepage": "https://github.com/clarinha-a/Pet_Shop#readme",
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/mustache-express": "^1.2.5",
