@@ -8,7 +8,7 @@ type Pet = {
     sex: PetSex
 }
 
-const data = [
+const data: Pet[] = [
     {
         type: 'dog',
         image: 'pastor-alemao.jpg',
@@ -165,30 +165,29 @@ const data = [
 export const Pet = {
     getAll: (): Pet[] => {
         return data;
-    }
-}
+    },
 
-getFromType: (type: PetTrype): Pet[] => {
-    return data.filter(item => {
-        if (item.type === type) {
-            return true;
-        } else {
-            return false;
-        }
-    })
-},
+    getFromType: (type: PetType): Pet[] => {
+        return data.filter(item => {
+            if (item.type === type) {
+                return true;
+            } else {
+                return false;
+            }
+        })
+    },
 
     getFromName: (name: string): Pet[] => {
         //primeira forma
         /*
-         return data.filter(item => {
-             if(item.name.indexOf(name) > -1){
-                 return true;
-             }else {
-                 return false;
-             }
-         })
-         */
+        return data.filter(item => {
+            if(item.name.indexOf(name) > -1){
+                return true;
+            }else {
+                return false;
+            }
+        })
+        */
 
         //segunda forma
         // return (item.name.indexOf(name) > -1)
@@ -198,3 +197,4 @@ getFromType: (type: PetTrype): Pet[] => {
             item.name.toLocaleLowerCase().indexOf(name.toLocaleLowerCase()) > -1
         );
     }
+}
