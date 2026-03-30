@@ -9,8 +9,9 @@ export const home = (req: Request, res: Response) => {
         menu: createMenuObject('all'),
         banner: {
             title: 'Todos os animais',
-            background: 'allanimals'
-        }
+            background: 'allanimals.jpg'
+        },
+        list
     });
 };
 
@@ -21,7 +22,8 @@ export const dogs = (req: Request, res: Response) => {
         banner: {
             title: 'Cachorros',
             background: 'banner_dog.jpg'
-        }
+        },
+        list
     });
 };
 
@@ -32,7 +34,8 @@ export const cats = (req: Request, res: Response) => {
         banner: {
             title: 'Gatos',
             background: 'banner_cat.jpg'
-        }
+        },
+        list
     });
 };
 
@@ -43,6 +46,7 @@ export const fishes = (req: Request, res: Response) => {
         banner: {
             title: 'Peixeis',
             background: 'banner_fish.jpg'
-        }
+        },
+        list
     });
 };
